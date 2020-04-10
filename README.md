@@ -14,7 +14,7 @@ Kontakt: willi_sontopski@arcor.de
 ## Schnellstartanleitung (für Windows)
 1. Downloade und installiere Python https://www.python.org/
    Dabei empfiehlt es sich gleich bei der Installation die Umgebungsvariable zu setzen:
-   ![What is this](install_settings.png)
+   ![Empfohlene Installationseinstellungen für Python](install_settings.PNG)
 
 2. Installiere die notwendigen Python Pakete mit dem Paketmanager `pip`. Falls du die Umgebungsvariable gesetzt hast, kann du einfach die Eingabeaufforderung öffnen und die Pakete installieren via
     ```
