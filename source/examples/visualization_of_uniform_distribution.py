@@ -70,9 +70,9 @@ def plot_data(
 
 
 if __name__ == "__main__":
-    SIZE_OF_SINGLE_SAMPLE = 1000
+    SIZE_OF_SINGLE_SAMPLE = 10000
     NUMBER_OF_SAMPLES = 5
-    EPSILON = 0.04  # should be <= 0.05
+    EPSILON = 0.02  # should be <= 0.05
     my_points = [[0.5, 0.45], [0.5, 0.55]]
 
     my_distribution_function = PiecewiseLinearFunction(my_points)
