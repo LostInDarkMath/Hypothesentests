@@ -70,17 +70,15 @@ def plot_data(
 
 
 if __name__ == "__main__":
-    SIZE_OF_SINGLE_SAMPLE = 10000
+    SIZE_OF_SINGLE_SAMPLE = 5000
     NUMBER_OF_SAMPLES = 5
-    EPSILON = 0.02  # should be <= 0.05
-    my_points = [[0.5, 0.45], [0.5, 0.55]]
+    EPSILON = 0.02  # should be < 0.05
+    my_points = [[0.9, 0.9], [0.95, 0.95 + EPSILON]]
 
-    my_distribution_function = PiecewiseLinearFunction(my_points)
-    uniform_dist_with_eps_error = PiecewiseLinearFunction([[0.9, 0.9], [0.95, 0.95 + EPSILON]])
-    distr_func = uniform_dist_with_eps_error
-    distr_func.plot(resolution=SIZE_OF_SINGLE_SAMPLE)
+    uniform_dist_with_eps_error = PiecewiseLinearFunction(my_points)
+    uniform_dist_with_eps_error.plot(resolution=SIZE_OF_SINGLE_SAMPLE, title='gestörte Verteilungsfunktion')
 
     my_list = []
     for j in range(NUMBER_OF_SAMPLES):
-        my_list.append(get_random_values(distr_func, SIZE_OF_SINGLE_SAMPLE))
+        my_list.append(get_random_values(uniform_dist_with_eps_error, SIZE_OF_SINGLE_SAMPLE))
     plot_data(my_list)

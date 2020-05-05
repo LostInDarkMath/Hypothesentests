@@ -68,7 +68,7 @@ class PiecewiseLinearFunction:
              resolution: int = 1000,
              with_inverse: bool = True,
              with_idendity: bool = True,
-             title: str = "Affine linear function",
+             title: str = "Piecewise linear function",
              **kwargs
              ) -> None:
         functions = []
